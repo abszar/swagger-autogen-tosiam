@@ -789,7 +789,8 @@ function addReferenceToMethods(data, patterns) {
         const origData = data;
         try {
             // CASE: router.route('/user').get(authorize, (req, res) => {
-            let aDataRoute = auxData.split(new RegExp(`.*\\s*\\n*\\t*\\.\\s*\\n*\\t*route\\s*\\n*\\t*\\(`));
+            let aDataRoute = auxData.split(new RegExp(`.*\\s*\\n*\\t*\\.\\s*\\n*\\t*serviceCall\\s*\\n*\\t*\\({`));
+            console.log("hhhhhhhh " + aDataRoute + " hhhhhhh");
             if (aDataRoute.length > 1) {
                 for (let idx = 1; idx < aDataRoute.length; ++idx) {
                     // CASE: app.get([_[get]_])('/automatic1/users/:id', (req, res) => {

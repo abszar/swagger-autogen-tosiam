@@ -22,7 +22,7 @@ const TEMPLATE = {
 const SWAGGER_TAG = '#swagger';
 const STRING_BREAKER = '__¬!@#$¬__'; // for line break and return without text changes
 const STRING_QUOTE = '__¬¬¬¬__QUOTE__¬¬¬¬__';
-const METHODS = ['get', 'head', 'post', 'put', 'delete', 'patch', 'options'];
+const METHODS = ['get', 'head', 'post', 'put', 'delete', 'patch', 'options', 'serviceCall'];
 const RESERVED_FUNCTIONS = ['if', 'for', 'while', 'forEach'];
 const QUOTES = ['"', "'", '`'];
 
